@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.0.1" sequence="0" timestamp="1457245924314" analysisTimestamp="1457245924325" release="">
+<BugCollection version="3.0.1" sequence="0" timestamp="1457247938682" analysisTimestamp="1457247938693" release="">
   <Project projectName="">
     <Jar>C:\Users\chicksjap\repos\cct_product\UserInterface\BuildOutput</Jar>
     <AuxClasspathEntry>C:\Users\chicksjap\repos\cct_product\UserInterface\lib</AuxClasspathEntry>
@@ -4951,46 +4951,6 @@
       <Message>At StaticInfoCache.java:[line 3432]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="GC_UNRELATED_TYPES" priority="1" rank="1" abbrev="GC" category="CORRECTNESS" instanceHash="80c1d0c86bd1f02e880d4b21d591ce77" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>No relationship between generic parameter and method argument</ShortMessage>
-    <LongMessage>String is incompatible with expected argument type Integer in com.jci.cct.dataaccess.domain.view.StaticInfoCache.mergeData(StaticView, String, ViewObjects, String, Mode, String, InnerIntArrays[])</LongMessage>
-    <Class classname="com.jci.cct.dataaccess.domain.view.StaticInfoCache" primary="true">
-      <SourceLine classname="com.jci.cct.dataaccess.domain.view.StaticInfoCache" start="102" end="3668" sourcefile="StaticInfoCache.java" sourcepath="com/jci/cct/dataaccess/domain/view/StaticInfoCache.java" relSourcepath="com\jci\cct\dataaccess\domain\view\StaticInfoCache.java">
-        <Message>At StaticInfoCache.java:[lines 102-3668]</Message>
-      </SourceLine>
-      <Message>In class com.jci.cct.dataaccess.domain.view.StaticInfoCache</Message>
-    </Class>
-    <Method classname="com.jci.cct.dataaccess.domain.view.StaticInfoCache" name="mergeData" signature="(Lcom/jci/cct/dataaccess/domain/view/StaticView;Ljava/lang/String;Lcom/jci/cct/dataaccess/domain/view/ViewObjects;Ljava/lang/String;Lcom/jci/cct/dataaccess/domain/common/Mode;Ljava/lang/String;[Lcom/jci/cct/dataaccess/domain/core/InnerIntArrays;)Lcom/jci/cct/dataaccess/domain/view/View;" isStatic="true" primary="true">
-      <SourceLine classname="com.jci.cct.dataaccess.domain.view.StaticInfoCache" start="1364" end="2823" startBytecode="0" endBytecode="1302" sourcefile="StaticInfoCache.java" sourcepath="com/jci/cct/dataaccess/domain/view/StaticInfoCache.java" relSourcepath="com\jci\cct\dataaccess\domain\view\StaticInfoCache.java"/>
-      <Message>In method com.jci.cct.dataaccess.domain.view.StaticInfoCache.mergeData(StaticView, String, ViewObjects, String, Mode, String, InnerIntArrays[])</Message>
-    </Method>
-    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
-      <SourceLine classname="java.lang.String" start="111" end="3128" sourcefile="String.java" sourcepath="java/lang/String.java">
-        <Message>At String.java:[lines 111-3128]</Message>
-      </SourceLine>
-      <Message>Actual type String</Message>
-    </Type>
-    <Type descriptor="Ljava/lang/Integer;" role="TYPE_EXPECTED">
-      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java">
-        <Message>At Integer.java:[lines 52-1590]</Message>
-      </SourceLine>
-      <Message>Expected Integer</Message>
-    </Type>
-    <Method classname="java.util.Map" name="get" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
-      <SourceLine classname="java.util.Map" sourcefile="Map.java" sourcepath="java/util/Map.java"/>
-      <Message>Called method java.util.Map.get(Object)</Message>
-    </Method>
-    <LocalVariable name="propertyIds" register="14" pc="1686" role="LOCAL_VARIABLE_INVOKED_ON">
-      <Message>Invoked on propertyIds</Message>
-    </LocalVariable>
-    <Method classname="java.lang.String" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
-      <SourceLine classname="java.lang.String" start="965" end="983" startBytecode="0" endBytecode="208" sourcefile="String.java" sourcepath="java/lang/String.java"/>
-      <Message>String.equals(Object) used to determine equality</Message>
-    </Method>
-    <SourceLine classname="com.jci.cct.dataaccess.domain.view.StaticInfoCache" primary="true" start="2002" end="2002" startBytecode="1689" endBytecode="1689" sourcefile="StaticInfoCache.java" sourcepath="com/jci/cct/dataaccess/domain/view/StaticInfoCache.java" relSourcepath="com\jci\cct\dataaccess\domain\view\StaticInfoCache.java">
-      <Message>At StaticInfoCache.java:[line 2002]</Message>
-    </SourceLine>
-  </BugInstance>
   <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" instanceHash="a5efb681122a7741faf668ec59d4d807" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="396">
     <ShortMessage>Exception is caught when Exception is not thrown</ShortMessage>
     <LongMessage>Exception is caught when Exception is not thrown in com.jci.cct.dataaccess.domain.view.StaticInfoCache.initializeClasses()</LongMessage>
@@ -7296,34 +7256,34 @@
     <ShortMessage>Reliance on default encoding</ShortMessage>
     <LongMessage>Found reliance on default encoding in com.jci.cct.ui.ApplicationInstanceManager.registerInstance(): String.getBytes()</LongMessage>
     <Class classname="com.jci.cct.ui.ApplicationInstanceManager" primary="true">
-      <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager" start="529" end="631" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java">
-        <Message>At CCTApplication.java:[lines 529-631]</Message>
+      <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager" start="529" end="633" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java">
+        <Message>At CCTApplication.java:[lines 529-633]</Message>
       </SourceLine>
       <Message>In class com.jci.cct.ui.ApplicationInstanceManager</Message>
     </Class>
     <Method classname="com.jci.cct.ui.ApplicationInstanceManager" name="registerInstance" signature="()Z" isStatic="true" primary="true">
-      <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager" start="550" end="619" startBytecode="0" endBytecode="833" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java"/>
+      <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager" start="550" end="621" startBytecode="0" endBytecode="833" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java"/>
       <Message>In method com.jci.cct.ui.ApplicationInstanceManager.registerInstance()</Message>
     </Method>
     <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
       <SourceLine classname="java.lang.String" start="946" end="946" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
       <Message>Called method String.getBytes()</Message>
     </Method>
-    <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager" primary="true" start="602" end="602" startBytecode="99" endBytecode="99" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java">
-      <Message>At CCTApplication.java:[line 602]</Message>
+    <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager" primary="true" start="604" end="604" startBytecode="99" endBytecode="99" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java">
+      <Message>At CCTApplication.java:[line 604]</Message>
     </SourceLine>
   </BugInstance>
   <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="1d809317dac6957bbffb79beb4bbaf5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Reliance on default encoding</ShortMessage>
     <LongMessage>Found reliance on default encoding in com.jci.cct.ui.ApplicationInstanceManager$1.run(): new java.io.InputStreamReader(InputStream)</LongMessage>
     <Class classname="com.jci.cct.ui.ApplicationInstanceManager$1" primary="true">
-      <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager$1" start="563" end="588" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java">
-        <Message>At CCTApplication.java:[lines 563-588]</Message>
+      <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager$1" start="563" end="590" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java">
+        <Message>At CCTApplication.java:[lines 563-590]</Message>
       </SourceLine>
       <Message>In class com.jci.cct.ui.ApplicationInstanceManager$1</Message>
     </Class>
     <Method classname="com.jci.cct.ui.ApplicationInstanceManager$1" name="run" signature="()V" isStatic="false" primary="true">
-      <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager$1" start="567" end="588" startBytecode="0" endBytecode="685" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java"/>
+      <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager$1" start="567" end="590" startBytecode="0" endBytecode="725" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java"/>
       <Message>In method com.jci.cct.ui.ApplicationInstanceManager$1.run()</Message>
     </Method>
     <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
@@ -7332,26 +7292,6 @@
     </Method>
     <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager$1" primary="true" start="575" end="575" startBytecode="43" endBytecode="43" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java">
       <Message>At CCTApplication.java:[line 575]</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" instanceHash="4502a3ce9bc85dba494f777970da0401" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
-    <ShortMessage>Dereference of the result of readLine() without nullcheck</ShortMessage>
-    <LongMessage>Dereference of the result of readLine() without nullcheck in com.jci.cct.ui.ApplicationInstanceManager$1.run()</LongMessage>
-    <Class classname="com.jci.cct.ui.ApplicationInstanceManager$1" primary="true">
-      <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager$1" start="563" end="588" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java">
-        <Message>At CCTApplication.java:[lines 563-588]</Message>
-      </SourceLine>
-      <Message>In class com.jci.cct.ui.ApplicationInstanceManager$1</Message>
-    </Class>
-    <Method classname="com.jci.cct.ui.ApplicationInstanceManager$1" name="run" signature="()V" isStatic="false" primary="true">
-      <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager$1" start="567" end="588" startBytecode="0" endBytecode="685" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java"/>
-      <Message>In method com.jci.cct.ui.ApplicationInstanceManager$1.run()</Message>
-    </Method>
-    <LocalVariable name="message" register="6" pc="66" role="LOCAL_VARIABLE_VALUE_OF">
-      <Message>Value loaded from message</Message>
-    </LocalVariable>
-    <SourceLine classname="com.jci.cct.ui.ApplicationInstanceManager$1" primary="true" start="578" end="578" startBytecode="68" endBytecode="68" sourcefile="CCTApplication.java" sourcepath="com/jci/cct/ui/CCTApplication.java" relSourcepath="com\jci\cct\ui\CCTApplication.java">
-      <Message>At CCTApplication.java:[line 578]</Message>
     </SourceLine>
   </BugInstance>
   <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" instanceHash="7a96c5580ef5f5bc6a64f6b48f07d6d0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="382">
@@ -10770,23 +10710,6 @@
       <Message>At PreferencesSystemSelectionDialog.java:[line 420]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" instanceHash="58561c5cb85433feb03860577f39f441" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>Class defines equals() and uses Object.hashCode()</ShortMessage>
-    <LongMessage>com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition defines equals and uses Object.hashCode()</LongMessage>
-    <Class classname="com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition" primary="true">
-      <SourceLine classname="com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition" start="42" end="210" sourcefile="AttributeColumnDefinition.java" sourcepath="com/jci/cct/ui/component/dialogs/preferences/attributetemplate/AttributeColumnDefinition.java" relSourcepath="com\jci\cct\ui\component\dialogs\preferences\attributetemplate\AttributeColumnDefinition.java">
-        <Message>At AttributeColumnDefinition.java:[lines 42-210]</Message>
-      </SourceLine>
-      <Message>In class com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition</Message>
-    </Class>
-    <Method classname="com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
-      <SourceLine classname="com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition" start="156" end="172" startBytecode="0" endBytecode="202" sourcefile="AttributeColumnDefinition.java" sourcepath="com/jci/cct/ui/component/dialogs/preferences/attributetemplate/AttributeColumnDefinition.java" relSourcepath="com\jci\cct\ui\component\dialogs\preferences\attributetemplate\AttributeColumnDefinition.java"/>
-      <Message>In method com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition.equals(Object)</Message>
-    </Method>
-    <SourceLine classname="com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition" start="156" end="172" startBytecode="0" endBytecode="202" sourcefile="AttributeColumnDefinition.java" sourcepath="com/jci/cct/ui/component/dialogs/preferences/attributetemplate/AttributeColumnDefinition.java" relSourcepath="com\jci\cct\ui\component\dialogs\preferences\attributetemplate\AttributeColumnDefinition.java" synthetic="true">
-      <Message>At AttributeColumnDefinition.java:[lines 156-172]</Message>
-    </SourceLine>
-  </BugInstance>
   <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="d78aaf50bfb8e0670af1b3198b65da38" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
     <LongMessage>com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeTable.createAttributeFiles(DefaultWizardContext) invokes inefficient new Short(String) constructor; use Short.valueOf(String) instead</LongMessage>
@@ -13700,33 +13623,6 @@
     </Class>
     <SourceLine classname="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$StopDiscoverAction" start="827" end="838" sourcefile="AttributeTemplatePage.java" sourcepath="com/jci/cct/ui/component/wizard/bulk/downloadcontrollerwizard/AttributeTemplatePage.java" relSourcepath="com\jci\cct\ui\component\wizard\bulk\downloadcontrollerwizard\AttributeTemplatePage.java" synthetic="true">
       <Message>At AttributeTemplatePage.java:[lines 827-838]</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugInstance type="HE_USE_OF_UNHASHABLE_CLASS" priority="1" rank="1" abbrev="HE" category="CORRECTNESS" instanceHash="6b1c33a37e12eb5c360203fb7ed233c9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>Use of class without a hashCode() method in a hashed data structure</ShortMessage>
-    <LongMessage>com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition doesn&apos;t define a hashCode() method but is used in a hashed data structure in com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$WriteAttributesAction.performWriteAttributes()</LongMessage>
-    <Class classname="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$WriteAttributesAction" primary="true">
-      <SourceLine classname="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$WriteAttributesAction" start="591" end="778" sourcefile="AttributeTemplatePage.java" sourcepath="com/jci/cct/ui/component/wizard/bulk/downloadcontrollerwizard/AttributeTemplatePage.java" relSourcepath="com\jci\cct\ui\component\wizard\bulk\downloadcontrollerwizard\AttributeTemplatePage.java">
-        <Message>At AttributeTemplatePage.java:[lines 591-778]</Message>
-      </SourceLine>
-      <Message>In class com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$WriteAttributesAction</Message>
-    </Class>
-    <Method classname="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$WriteAttributesAction" name="performWriteAttributes" signature="()V" isStatic="false" primary="true">
-      <SourceLine classname="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$WriteAttributesAction" start="623" end="737" startBytecode="0" endBytecode="1408" sourcefile="AttributeTemplatePage.java" sourcepath="com/jci/cct/ui/component/wizard/bulk/downloadcontrollerwizard/AttributeTemplatePage.java" relSourcepath="com\jci\cct\ui\component\wizard\bulk\downloadcontrollerwizard\AttributeTemplatePage.java"/>
-      <Message>In method com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$WriteAttributesAction.performWriteAttributes()</Message>
-    </Method>
-    <Type descriptor="Lcom/jci/cct/ui/component/dialogs/preferences/attributetemplate/AttributeColumnDefinition;" role="TYPE_UNHASHABLE">
-      <SourceLine classname="com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition" start="42" end="210" sourcefile="AttributeColumnDefinition.java" sourcepath="com/jci/cct/ui/component/dialogs/preferences/attributetemplate/AttributeColumnDefinition.java" relSourcepath="com\jci\cct\ui\component\dialogs\preferences\attributetemplate\AttributeColumnDefinition.java">
-        <Message>At AttributeColumnDefinition.java:[lines 42-210]</Message>
-      </SourceLine>
-      <Message>Unhashable class com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition </Message>
-    </Type>
-    <Method classname="java.util.HashSet" name="add" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_CALLED">
-      <SourceLine classname="java.util.HashSet" start="219" end="219" startBytecode="0" endBytecode="54" sourcefile="HashSet.java" sourcepath="java/util/HashSet.java"/>
-      <Message>Called method java.util.HashSet.add(Object)</Message>
-    </Method>
-    <SourceLine classname="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$WriteAttributesAction" primary="true" start="674" end="674" startBytecode="214" endBytecode="214" sourcefile="AttributeTemplatePage.java" sourcepath="com/jci/cct/ui/component/wizard/bulk/downloadcontrollerwizard/AttributeTemplatePage.java" relSourcepath="com\jci\cct\ui\component\wizard\bulk\downloadcontrollerwizard\AttributeTemplatePage.java">
-      <Message>At AttributeTemplatePage.java:[line 674]</Message>
     </SourceLine>
   </BugInstance>
   <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE" instanceHash="39a0e735f3f14ad09354819b6a441da6" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
@@ -19309,7 +19205,7 @@
       <SourceLine classname="com.jci.cct.ui.view.tabs.connections.dialogs.portselection.PortSelections" start="82" end="145" startBytecode="0" endBytecode="623" sourcefile="PortSelections.java" sourcepath="com/jci/cct/ui/view/tabs/connections/dialogs/portselection/PortSelections.java" relSourcepath="com\jci\cct\ui\view\tabs\connections\dialogs\portselection\PortSelections.java"/>
       <Message>In method new com.jci.cct.ui.view.tabs.connections.dialogs.portselection.PortSelections(Block, Port, List, boolean)</Message>
     </Method>
-    <LocalVariable name="selectedBlk" register="1" pc="127" role="LOCAL_VARIABLE_VALUE_OF">
+    <LocalVariable name="selectedBlk" register="1" pc="120" role="LOCAL_VARIABLE_VALUE_OF">
       <Message>Value loaded from selectedBlk</Message>
     </LocalVariable>
     <SourceLine classname="com.jci.cct.ui.view.tabs.connections.dialogs.portselection.PortSelections" primary="true" start="113" end="113" startBytecode="128" endBytecode="128" sourcefile="PortSelections.java" sourcepath="com/jci/cct/ui/view/tabs/connections/dialogs/portselection/PortSelections.java" relSourcepath="com\jci\cct\ui\view\tabs\connections\dialogs\portselection\PortSelections.java" role="SOURCE_LINE_DEREF">
@@ -21173,17 +21069,6 @@ collection class.
 
     ]]></Details>
   </BugPattern>
-  <BugPattern type="HE_USE_OF_UNHASHABLE_CLASS" abbrev="HE" category="CORRECTNESS">
-    <ShortDescription>Use of class without a hashCode() method in a hashed data structure</ShortDescription>
-    <Details><![CDATA[
-
-  <p> A class defines an equals(Object)  method but not a hashCode() method,
-and thus doesn't fulfill the requirement that equal objects have equal hashCodes.
-An instance of this class is used in a hash data structure, making the need to
-fix this problem of highest importance.
-
-    ]]></Details>
-  </BugPattern>
   <BugPattern type="CO_COMPARETO_INCORRECT_FLOATING" abbrev="Co" category="BAD_PRACTICE">
     <ShortDescription>compareTo()/compare() incorrectly handles float or double value</ShortDescription>
     <Details><![CDATA[
@@ -21363,16 +21248,6 @@ to instruct FindBugs that ignoring the return value of this method is acceptable
 
     ]]></Details>
   </BugPattern>
-  <BugPattern type="NP_DEREFERENCE_OF_READLINE_VALUE" abbrev="NP" category="STYLE">
-    <ShortDescription>Dereference of the result of readLine() without nullcheck</ShortDescription>
-    <Details><![CDATA[
-
-  <p> The result of invoking readLine() is dereferenced without checking to see if the result is null. If there are no more lines of text
-to read, readLine() will return null and dereferencing that will generate a null pointer exception.
-</p>
-
-    ]]></Details>
-  </BugPattern>
   <BugPattern type="NP_TOSTRING_COULD_RETURN_NULL" abbrev="NP" category="BAD_PRACTICE">
     <ShortDescription>toString method may return null</ShortDescription>
     <Details><![CDATA[
@@ -21527,36 +21402,6 @@ or cause unexpected behavior.
       </p>
       
    ]]></Details>
-  </BugPattern>
-  <BugPattern type="GC_UNRELATED_TYPES" abbrev="GC" category="CORRECTNESS">
-    <ShortDescription>No relationship between generic parameter and method argument</ShortDescription>
-    <Details><![CDATA[
-     
-     <p> This call to a generic collection method contains an argument
-     with an incompatible class from that of the collection's parameter
-    (i.e., the type of the argument is neither a supertype nor a subtype
-        of the corresponding generic type argument).
-     Therefore, it is unlikely that the collection contains any objects
-    that are equal to the method argument used here.
-    Most likely, the wrong value is being passed to the method.</p>
-    <p>In general, instances of two unrelated classes are not equal.
-    For example, if the <code>Foo</code> and <code>Bar</code> classes
-    are not related by subtyping, then an instance of <code>Foo</code>
-        should not be equal to an instance of <code>Bar</code>.
-    Among other issues, doing so will likely result in an equals method
-    that is not symmetrical. For example, if you define the <code>Foo</code> class
-    so that a <code>Foo</code> can be equal to a <code>String</code>,
-    your equals method isn't symmetrical since a <code>String</code> can only be equal
-    to a <code>String</code>.
-    </p>
-    <p>In rare cases, people do define nonsymmetrical equals methods and still manage to make
-    their code work. Although none of the APIs document or guarantee it, it is typically
-    the case that if you check if a <code>Collection&lt;String&gt;</code> contains
-    a <code>Foo</code>, the equals method of argument (e.g., the equals method of the
-    <code>Foo</code> class) used to perform the equality checks.
-    </p>
-     
-    ]]></Details>
   </BugPattern>
   <BugPattern type="EQ_DOESNT_OVERRIDE_EQUALS" abbrev="Eq" category="STYLE">
     <ShortDescription>Class doesn&apos;t override equals in superclass</ShortDescription>
@@ -22012,9 +21857,6 @@ signals unexpected behavior by returning an atypical return value.
   <BugCode abbrev="IC">
     <Description>Initialization circularity</Description>
   </BugCode>
-  <BugCode abbrev="GC">
-    <Description>Suspicious calls to generic collection methods</Description>
-  </BugCode>
   <BugCode abbrev="Nm">
     <Description>Confusing method name</Description>
   </BugCode>
@@ -22088,7 +21930,7 @@ signals unexpected behavior by returning an atypical return value.
     <Description>Test for floating point equality</Description>
   </BugCode>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sun, 6 Mar 2016 00:32:04 -0600" total_classes="2720" referenced_classes="4437" total_bugs="881" total_size="163898" num_packages="168" java_version="1.8.0-internal" vm_version="25.40-b02" cpu_seconds="134.21" clock_seconds="129.83" peak_mbytes="267.95" alloc_mbytes="247.50" gc_seconds="62.12" priority_2="766" priority_1="115">
+  <FindBugsSummary timestamp="Sun, 6 Mar 2016 01:05:38 -0600" total_classes="2720" referenced_classes="4437" total_bugs="877" total_size="163906" num_packages="168" java_version="1.8.0-internal" vm_version="25.40-b02" cpu_seconds="136.61" clock_seconds="132.22" peak_mbytes="267.93" alloc_mbytes="247.50" gc_seconds="62.86" priority_2="765" priority_1="112">
     <FileStats path="com/jci/cct/dataaccess/daService/DiscoveryService.java" bugCount="0" size="212"/>
     <FileStats path="com/jci/cct/dataaccess/daService/SimulationService.java" bugCount="0" size="55"/>
     <FileStats path="com/jci/cct/dataaccess/daService/SyncService.java" bugCount="3" size="186" bugHash="0018f77ac498538d38361c48a3526367"/>
@@ -22273,7 +22115,7 @@ signals unexpected behavior by returning an atypical return value.
     <FileStats path="com/jci/cct/dataaccess/domain/view/ObjectClasses.java" bugCount="1" size="34" bugHash="2f974472aa86999259d099438811b3a5"/>
     <FileStats path="com/jci/cct/dataaccess/domain/view/Property.java" bugCount="0" size="41"/>
     <FileStats path="com/jci/cct/dataaccess/domain/view/PropertyList.java" bugCount="1" size="73" bugHash="140a00ca8abac966b92b1b4a27db0f55"/>
-    <FileStats path="com/jci/cct/dataaccess/domain/view/StaticInfoCache.java" bugCount="5" size="1572" bugHash="0f29827f2df4c6322249c50d044e8e16"/>
+    <FileStats path="com/jci/cct/dataaccess/domain/view/StaticInfoCache.java" bugCount="4" size="1572" bugHash="3194511e9c09a84b720f0641f37fb58b"/>
     <FileStats path="com/jci/cct/dataaccess/domain/view/StaticView.java" bugCount="1" size="195" bugHash="c78f2fefc6ab37555dd5c67dc1e6b999"/>
     <FileStats path="com/jci/cct/dataaccess/domain/view/StaticViews.java" bugCount="1" size="70" bugHash="3ba8614a4d9636aee6a8d7f6360b4a8e"/>
     <FileStats path="com/jci/cct/dataaccess/domain/view/View.java" bugCount="2" size="112" bugHash="cf71f86c06232c1f56d148e79b4cfbd4"/>
@@ -22414,7 +22256,7 @@ signals unexpected behavior by returning an atypical return value.
     <FileStats path="com/jci/cct/dataaccess/session/VetoableEvent.java" bugCount="0" size="11"/>
     <FileStats path="com/jci/cct/dataaccess/util/SingleSAXElementHandler.java" bugCount="0" size="22"/>
     <FileStats path="com/jci/cct/dataaccess/util/XPathEvaluator.java" bugCount="0" size="27"/>
-    <FileStats path="com/jci/cct/ui/CCTApplication.java" bugCount="6" size="296" bugHash="f3c0dae72f08da0c1b9c1ace601312f8"/>
+    <FileStats path="com/jci/cct/ui/CCTApplication.java" bugCount="5" size="297" bugHash="40be9f78b8c818c93f260a2c4093067b"/>
     <FileStats path="com/jci/cct/ui/CCTApplicationDataManager.java" bugCount="2" size="43" bugHash="0df79e90f6840bfce767c7c9827b49c5"/>
     <FileStats path="com/jci/cct/ui/CCTApplicationFrame.java" bugCount="1" size="631" bugHash="b73b3f878b7598b9d3a1bb616178ff22"/>
     <FileStats path="com/jci/cct/ui/CCTSplashScreen.java" bugCount="0" size="21"/>
@@ -22707,7 +22549,7 @@ signals unexpected behavior by returning an atypical return value.
     <FileStats path="com/jci/cct/ui/component/dialogs/preferences/PreferencesObjectNamingDialog.java" bugCount="2" size="996" bugHash="02af798552a7816ad4b9cb078ea9d266"/>
     <FileStats path="com/jci/cct/ui/component/dialogs/preferences/PreferencesSystemSelectionDialog.java" bugCount="1" size="370" bugHash="d6a5dbed76eefeab1a2dacd8ac74137b"/>
     <FileStats path="com/jci/cct/ui/component/dialogs/preferences/RefreshRateUtils.java" bugCount="0" size="73"/>
-    <FileStats path="com/jci/cct/ui/component/dialogs/preferences/attributetemplate/AttributeColumnDefinition.java" bugCount="1" size="178" bugHash="d51db915d375980e7b8eb65fab842eb8"/>
+    <FileStats path="com/jci/cct/ui/component/dialogs/preferences/attributetemplate/AttributeColumnDefinition.java" bugCount="0" size="185"/>
     <FileStats path="com/jci/cct/ui/component/dialogs/preferences/attributetemplate/AttributeSelectionDialog.java" bugCount="0" size="165"/>
     <FileStats path="com/jci/cct/ui/component/dialogs/preferences/attributetemplate/AttributeTable.java" bugCount="6" size="1616" bugHash="dd32c6e7204b73839a46a56b22706349"/>
     <FileStats path="com/jci/cct/ui/component/dialogs/preferences/attributetemplate/AttributeTableModel.java" bugCount="4" size="313" bugHash="da6fbbf6008e902ab17c144cc01ec95c"/>
@@ -22941,7 +22783,7 @@ signals unexpected behavior by returning an atypical return value.
     <FileStats path="com/jci/cct/ui/component/wizard/bulk/ValidationState.java" bugCount="0" size="13"/>
     <FileStats path="com/jci/cct/ui/component/wizard/bulk/downloadZFRwizard/DownloadZFRWizard.java" bugCount="1" size="156" bugHash="39ae7087591986a4264da5b361618baf"/>
     <FileStats path="com/jci/cct/ui/component/wizard/bulk/downloadcontrollerwizard/AttributeItem.java" bugCount="0" size="140"/>
-    <FileStats path="com/jci/cct/ui/component/wizard/bulk/downloadcontrollerwizard/AttributeTemplatePage.java" bugCount="4" size="510" bugHash="2ca4f0b3333d433529bdac178d047010"/>
+    <FileStats path="com/jci/cct/ui/component/wizard/bulk/downloadcontrollerwizard/AttributeTemplatePage.java" bugCount="3" size="510" bugHash="a73be61b7ef9c647f99bea9ac9f57742"/>
     <FileStats path="com/jci/cct/ui/component/wizard/bulk/downloadcontrollerwizard/ControllerObject.java" bugCount="0" size="35"/>
     <FileStats path="com/jci/cct/ui/component/wizard/bulk/downloadcontrollerwizard/DownloadControllerWizard.java" bugCount="1" size="184" bugHash="f4a53b9a2ba059cde85340f359769cba"/>
     <FileStats path="com/jci/cct/ui/component/wizard/bulk/downloadcontrollerwizard/ReadAttributesReader.java" bugCount="2" size="214" bugHash="ed3ce430ddb0591957577e7b7daeee42"/>
@@ -23679,12 +23521,12 @@ signals unexpected behavior by returning an atypical return value.
       <ClassStats class="com.jci.cct.dataaccess.domain.util.NMToken" sourceFile="NMToken.java" interface="false" size="107" bugs="0"/>
       <ClassStats class="com.jci.cct.dataaccess.domain.util.ReferenceUtil" sourceFile="ReferenceUtil.java" interface="false" size="13" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.jci.cct.dataaccess.domain.view" total_bugs="20" total_types="17" total_size="3996" priority_2="15" priority_1="5">
+    <PackageStats package="com.jci.cct.dataaccess.domain.view" total_bugs="19" total_types="17" total_size="3996" priority_2="15" priority_1="4">
       <ClassStats class="com.jci.cct.dataaccess.domain.view.ObjectClass" sourceFile="ObjectClass.java" interface="false" size="192" bugs="2" priority_2="1" priority_1="1"/>
       <ClassStats class="com.jci.cct.dataaccess.domain.view.ObjectClasses" sourceFile="ObjectClasses.java" interface="false" size="34" bugs="1" priority_1="1"/>
       <ClassStats class="com.jci.cct.dataaccess.domain.view.Property" sourceFile="Property.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="com.jci.cct.dataaccess.domain.view.PropertyList" sourceFile="PropertyList.java" interface="false" size="73" bugs="1" priority_2="1"/>
-      <ClassStats class="com.jci.cct.dataaccess.domain.view.StaticInfoCache" sourceFile="StaticInfoCache.java" interface="false" size="1572" bugs="5" priority_2="3" priority_1="2"/>
+      <ClassStats class="com.jci.cct.dataaccess.domain.view.StaticInfoCache" sourceFile="StaticInfoCache.java" interface="false" size="1572" bugs="4" priority_2="3" priority_1="1"/>
       <ClassStats class="com.jci.cct.dataaccess.domain.view.StaticView" sourceFile="StaticView.java" interface="false" size="195" bugs="1" priority_2="1"/>
       <ClassStats class="com.jci.cct.dataaccess.domain.view.StaticViews" sourceFile="StaticViews.java" interface="false" size="70" bugs="1" priority_2="1"/>
       <ClassStats class="com.jci.cct.dataaccess.domain.view.View" sourceFile="View.java" interface="false" size="112" bugs="2" priority_2="2"/>
@@ -23888,10 +23730,10 @@ signals unexpected behavior by returning an atypical return value.
       <ClassStats class="com.jci.cct.dataaccess.util.SingleSAXElementHandler" sourceFile="SingleSAXElementHandler.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="com.jci.cct.dataaccess.util.XPathEvaluator" sourceFile="XPathEvaluator.java" interface="false" size="27" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.jci.cct.ui" total_bugs="9" total_types="14" total_size="1019" priority_2="6" priority_1="3">
+    <PackageStats package="com.jci.cct.ui" total_bugs="8" total_types="14" total_size="1020" priority_2="5" priority_1="3">
       <ClassStats class="com.jci.cct.ui.ApplicationInstanceListener" sourceFile="CCTApplication.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="com.jci.cct.ui.ApplicationInstanceManager" sourceFile="CCTApplication.java" interface="false" size="47" bugs="1" priority_1="1"/>
-      <ClassStats class="com.jci.cct.ui.ApplicationInstanceManager$1" sourceFile="CCTApplication.java" interface="false" size="21" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="com.jci.cct.ui.ApplicationInstanceManager$1" sourceFile="CCTApplication.java" interface="false" size="22" bugs="1" priority_1="1"/>
       <ClassStats class="com.jci.cct.ui.CCTApplication" sourceFile="CCTApplication.java" interface="false" size="177" bugs="3" priority_2="3"/>
       <ClassStats class="com.jci.cct.ui.CCTApplication$1" sourceFile="CCTApplication.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.jci.cct.ui.CCTApplication$2" sourceFile="CCTApplication.java" interface="false" size="7" bugs="0"/>
@@ -24694,8 +24536,8 @@ signals unexpected behavior by returning an atypical return value.
       <ClassStats class="com.jci.cct.ui.component.dialogs.preferences.PreferencesSystemSelectionDialog$8" sourceFile="PreferencesSystemSelectionDialog.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="com.jci.cct.ui.component.dialogs.preferences.RefreshRateUtils" sourceFile="RefreshRateUtils.java" interface="false" size="73" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.jci.cct.ui.component.dialogs.preferences.attributetemplate" total_bugs="14" total_types="40" total_size="2847" priority_2="11" priority_1="3">
-      <ClassStats class="com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition" sourceFile="AttributeColumnDefinition.java" interface="false" size="97" bugs="1" priority_1="1"/>
+    <PackageStats package="com.jci.cct.ui.component.dialogs.preferences.attributetemplate" total_bugs="13" total_types="40" total_size="2854" priority_2="11" priority_1="2">
+      <ClassStats class="com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition" sourceFile="AttributeColumnDefinition.java" interface="false" size="104" bugs="0"/>
       <ClassStats class="com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeColumnDefinition$MultiLineCheckboxHeaderRenderer" sourceFile="AttributeColumnDefinition.java" interface="false" size="81" bugs="0"/>
       <ClassStats class="com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeSelectionDialog" sourceFile="AttributeSelectionDialog.java" interface="false" size="96" bugs="0"/>
       <ClassStats class="com.jci.cct.ui.component.dialogs.preferences.attributetemplate.AttributeSelectionDialog$1" sourceFile="AttributeSelectionDialog.java" interface="false" size="11" bugs="0"/>
@@ -25255,7 +25097,7 @@ signals unexpected behavior by returning an atypical return value.
       <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadZFRwizard.DownloadZFRWizard$MultiStepControllerListenerAdapter" sourceFile="DownloadZFRWizard.java" interface="false" size="53" bugs="1" priority_2="1"/>
       <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadZFRwizard.DownloadZFRWizard$MultipleCCTMultiStepController" sourceFile="DownloadZFRWizard.java" interface="false" size="11" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard" total_bugs="7" total_types="13" total_size="1083" priority_2="6" priority_1="1">
+    <PackageStats package="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard" total_bugs="6" total_types="13" total_size="1083" priority_2="6">
       <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeItem" sourceFile="AttributeItem.java" interface="false" size="140" bugs="0"/>
       <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage" sourceFile="AttributeTemplatePage.java" interface="false" size="337" bugs="1" priority_2="1"/>
       <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$1" sourceFile="AttributeTemplatePage.java" interface="false" size="1" bugs="0"/>
@@ -25263,7 +25105,7 @@ signals unexpected behavior by returning an atypical return value.
       <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$ReadAttributesAction" sourceFile="AttributeTemplatePage.java" interface="false" size="28" bugs="0"/>
       <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$StartDiscoverAction" sourceFile="AttributeTemplatePage.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$StopDiscoverAction" sourceFile="AttributeTemplatePage.java" interface="false" size="13" bugs="1" priority_2="1"/>
-      <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$WriteAttributesAction" sourceFile="AttributeTemplatePage.java" interface="false" size="107" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.AttributeTemplatePage$WriteAttributesAction" sourceFile="AttributeTemplatePage.java" interface="false" size="107" bugs="1" priority_2="1"/>
       <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.ControllerObject" sourceFile="ControllerObject.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.DownloadControllerWizard" sourceFile="DownloadControllerWizard.java" interface="false" size="103" bugs="0"/>
       <ClassStats class="com.jci.cct.ui.component.wizard.bulk.downloadcontrollerwizard.DownloadControllerWizard$MultiStepControllerListenerAdapter" sourceFile="DownloadControllerWizard.java" interface="false" size="70" bugs="1" priority_2="1"/>
@@ -26509,33 +26351,37 @@ signals unexpected behavior by returning an atypical return value.
       <ClassStats class="com.jci.util.TypedCloneable" sourceFile="TypedCloneable.java" interface="true" size="2" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="15793" invocations="19342" avgMicrosecondsPerInvocation="816" maxMicrosecondsPerInvocation="458752" standardDeviationMircosecondsPerInvocation="14313"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="13204" invocations="19505" avgMicrosecondsPerInvocation="676" maxMicrosecondsPerInvocation="504788" standardDeviationMircosecondsPerInvocation="13188"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="10623" invocations="19567" avgMicrosecondsPerInvocation="542" maxMicrosecondsPerInvocation="479476" standardDeviationMircosecondsPerInvocation="10836"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="8594" invocations="20496" avgMicrosecondsPerInvocation="419" maxMicrosecondsPerInvocation="452770" standardDeviationMircosecondsPerInvocation="9218"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="7494" invocations="19973" avgMicrosecondsPerInvocation="375" maxMicrosecondsPerInvocation="425589" standardDeviationMircosecondsPerInvocation="8716"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="4795" invocations="14450" avgMicrosecondsPerInvocation="331" maxMicrosecondsPerInvocation="472717" standardDeviationMircosecondsPerInvocation="8215"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="4284" invocations="19567" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="459833" standardDeviationMircosecondsPerInvocation="6459"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="2797" invocations="19567" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="416608" standardDeviationMircosecondsPerInvocation="5407"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="2722" invocations="24097" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="455563" standardDeviationMircosecondsPerInvocation="4661"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="2678" invocations="12089" avgMicrosecondsPerInvocation="221" maxMicrosecondsPerInvocation="37294" standardDeviationMircosecondsPerInvocation="688"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="1883" invocations="18213" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="438737" standardDeviationMircosecondsPerInvocation="5134"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1870" invocations="7692" avgMicrosecondsPerInvocation="243" maxMicrosecondsPerInvocation="231742" standardDeviationMircosecondsPerInvocation="3025"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="1697" invocations="19342" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="430491" standardDeviationMircosecondsPerInvocation="4048"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" totalMilliseconds="1636" invocations="2720" avgMicrosecondsPerInvocation="601" maxMicrosecondsPerInvocation="414803" standardDeviationMircosecondsPerInvocation="13459"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1619" invocations="2707" avgMicrosecondsPerInvocation="598" maxMicrosecondsPerInvocation="393542" standardDeviationMircosecondsPerInvocation="10509"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1408" invocations="4437" avgMicrosecondsPerInvocation="317" maxMicrosecondsPerInvocation="39663" standardDeviationMircosecondsPerInvocation="1261"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1345" invocations="4437" avgMicrosecondsPerInvocation="303" maxMicrosecondsPerInvocation="39015" standardDeviationMircosecondsPerInvocation="1204"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="1291" invocations="2720" avgMicrosecondsPerInvocation="474" maxMicrosecondsPerInvocation="371190" standardDeviationMircosecondsPerInvocation="9363"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="1261" invocations="2720" avgMicrosecondsPerInvocation="463" maxMicrosecondsPerInvocation="367755" standardDeviationMircosecondsPerInvocation="9903"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="1200" invocations="2720" avgMicrosecondsPerInvocation="441" maxMicrosecondsPerInvocation="380941" standardDeviationMircosecondsPerInvocation="10047"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizeOnClassLiteralNotGetClass" totalMilliseconds="1132" invocations="2720" avgMicrosecondsPerInvocation="416" maxMicrosecondsPerInvocation="440430" standardDeviationMircosecondsPerInvocation="10558"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="1128" invocations="8421" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="401492" standardDeviationMircosecondsPerInvocation="4412"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDerefsInvolvingNonShortCircuitEvaluation" totalMilliseconds="1025" invocations="2720" avgMicrosecondsPerInvocation="377" maxMicrosecondsPerInvocation="331499" standardDeviationMircosecondsPerInvocation="8819"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="1010" invocations="2720" avgMicrosecondsPerInvocation="371" maxMicrosecondsPerInvocation="335368" standardDeviationMircosecondsPerInvocation="6483"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="1009" invocations="2708" avgMicrosecondsPerInvocation="372" maxMicrosecondsPerInvocation="478305" standardDeviationMircosecondsPerInvocation="9221"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="1007" invocations="2720" avgMicrosecondsPerInvocation="370" maxMicrosecondsPerInvocation="374362" standardDeviationMircosecondsPerInvocation="7244"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="992" invocations="2717" avgMicrosecondsPerInvocation="365" maxMicrosecondsPerInvocation="329631" standardDeviationMircosecondsPerInvocation="8787"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="17238" invocations="19506" avgMicrosecondsPerInvocation="883" maxMicrosecondsPerInvocation="487326" standardDeviationMircosecondsPerInvocation="16153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="10775" invocations="19343" avgMicrosecondsPerInvocation="557" maxMicrosecondsPerInvocation="412073" standardDeviationMircosecondsPerInvocation="10113"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="10448" invocations="20497" avgMicrosecondsPerInvocation="509" maxMicrosecondsPerInvocation="457100" standardDeviationMircosecondsPerInvocation="10873"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="8523" invocations="19568" avgMicrosecondsPerInvocation="435" maxMicrosecondsPerInvocation="443519" standardDeviationMircosecondsPerInvocation="8760"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="8016" invocations="19974" avgMicrosecondsPerInvocation="401" maxMicrosecondsPerInvocation="484067" standardDeviationMircosecondsPerInvocation="9692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="5662" invocations="14451" avgMicrosecondsPerInvocation="391" maxMicrosecondsPerInvocation="461783" standardDeviationMircosecondsPerInvocation="9008"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="3249" invocations="19568" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="399793" standardDeviationMircosecondsPerInvocation="4412"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="2850" invocations="12089" avgMicrosecondsPerInvocation="235" maxMicrosecondsPerInvocation="39444" standardDeviationMircosecondsPerInvocation="798"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="2798" invocations="19568" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="440076" standardDeviationMircosecondsPerInvocation="5612"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1972" invocations="7692" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="266163" standardDeviationMircosecondsPerInvocation="3397"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="1720" invocations="2720" avgMicrosecondsPerInvocation="632" maxMicrosecondsPerInvocation="417356" standardDeviationMircosecondsPerInvocation="13011"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="1665" invocations="19343" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="392665" standardDeviationMircosecondsPerInvocation="3927"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1565" invocations="24098" avgMicrosecondsPerInvocation="64" maxMicrosecondsPerInvocation="33611" standardDeviationMircosecondsPerInvocation="379"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="1526" invocations="8421" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="415615" standardDeviationMircosecondsPerInvocation="5916"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="1496" invocations="2720" avgMicrosecondsPerInvocation="550" maxMicrosecondsPerInvocation="474173" standardDeviationMircosecondsPerInvocation="11870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1478" invocations="4437" avgMicrosecondsPerInvocation="333" maxMicrosecondsPerInvocation="46712" standardDeviationMircosecondsPerInvocation="1358"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1338" invocations="4437" avgMicrosecondsPerInvocation="301" maxMicrosecondsPerInvocation="38063" standardDeviationMircosecondsPerInvocation="1077"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="1285" invocations="2720" avgMicrosecondsPerInvocation="472" maxMicrosecondsPerInvocation="397737" standardDeviationMircosecondsPerInvocation="10581"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1232" invocations="2706" avgMicrosecondsPerInvocation="455" maxMicrosecondsPerInvocation="345768" standardDeviationMircosecondsPerInvocation="6705"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="1229" invocations="2720" avgMicrosecondsPerInvocation="452" maxMicrosecondsPerInvocation="403629" standardDeviationMircosecondsPerInvocation="10910"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="1201" invocations="2720" avgMicrosecondsPerInvocation="441" maxMicrosecondsPerInvocation="447558" standardDeviationMircosecondsPerInvocation="10627"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="1168" invocations="2715" avgMicrosecondsPerInvocation="430" maxMicrosecondsPerInvocation="391260" standardDeviationMircosecondsPerInvocation="9997"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField" totalMilliseconds="1157" invocations="2720" avgMicrosecondsPerInvocation="425" maxMicrosecondsPerInvocation="369215" standardDeviationMircosecondsPerInvocation="9377"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1086" invocations="2720" avgMicrosecondsPerInvocation="399" maxMicrosecondsPerInvocation="367869" standardDeviationMircosecondsPerInvocation="7071"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="1083" invocations="2718" avgMicrosecondsPerInvocation="398" maxMicrosecondsPerInvocation="359075" standardDeviationMircosecondsPerInvocation="9653"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="1059" invocations="18214" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="343595" standardDeviationMircosecondsPerInvocation="2550"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFloatEquality" totalMilliseconds="1056" invocations="2720" avgMicrosecondsPerInvocation="388" maxMicrosecondsPerInvocation="335827" standardDeviationMircosecondsPerInvocation="8599"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="1050" invocations="2720" avgMicrosecondsPerInvocation="386" maxMicrosecondsPerInvocation="392050" standardDeviationMircosecondsPerInvocation="7531"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="989" invocations="2720" avgMicrosecondsPerInvocation="363" maxMicrosecondsPerInvocation="381517" standardDeviationMircosecondsPerInvocation="7355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="965" invocations="2720" avgMicrosecondsPerInvocation="354" maxMicrosecondsPerInvocation="411083" standardDeviationMircosecondsPerInvocation="7892"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindReturnRef" totalMilliseconds="960" invocations="2720" avgMicrosecondsPerInvocation="353" maxMicrosecondsPerInvocation="387774" standardDeviationMircosecondsPerInvocation="9440"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
